@@ -42,7 +42,7 @@ func Token() (string, error) {
 	// Wait for user to log in
 	for {
 		currentUrl := page.URL()
-		if currentUrl == "https://www.floatplane.com/" {
+		if currentUrl != "https://www.floatplane.com/login" {
 			break
 		}
 		time.Sleep(time.Millisecond * 100)
